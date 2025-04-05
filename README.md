@@ -159,10 +159,16 @@ Set ActivateAutoClose: "true" in your workflow to close tasks when effort matche
 
 To mention team members in automated comments, you need their **Azure DevOps User IDs**:
 
-1. **Go to Azure DevOps** ➝ **Organization Settings**.
-2. **Select Users** and find the team member.
-3. Click on the user profile and copy their **ID from the URL**.
-4. Add multiple IDs separated by a comma `,`.
+1. Open any work item.
+2. Go to the comment section and click "Switch to Markdown editor."
+3. Type @ and select the user(s) you want.
+4. Click "Switch to Markdown editor" again to view the raw Markdown.
+5. Copy the ID after Identity `version:0.0,`.
+6. Add the ID(s) to the YAML file, separated by commas `,` (no spaces) if there’s more than one.
+
+https://github.com/user-attachments/assets/161d8e95-c591-4ecb-821a-597bf383276c
+
+
 
 ## ✅ How to use analysis Table
 
@@ -182,15 +188,38 @@ https://github.com/user-attachments/assets/4be06bca-e083-47e7-a561-593253b63582
 
 
 ##  💪 Azure-Do in Action  
-### Task Creation
+### 🟢 Task Analysis
+
+https://github.com/user-attachments/assets/2e44d77d-6ef6-4b53-885b-01543a64cae7
+
+**Here's how AZURE-DO transforms your analysis tables into actionable insights:**
+
+1. **Smart Task Detection**  
+   - 🔍 Scans all Analysis Tasks linked to User Stories in the `StateReflectKeyword` state (e.g., "Ready For Review")
+
+2. **Dynamic Table Processing**  
+   - 📊 Parses analysis tables row-by-row  
+   - 🛡️ Auto-corrects common formatting issues (spacing, capitalization, tabs)  
+   - ✅ Identifies rows with **`Updated`** status:  
+     - ✍️ Reflect the Q/A as organized comments to the User Stories  
+     - 📝 State that All Answers from the Product Owner (`POName`) and mention team members via Azure IDs (Web/Mobile teams based on User Story type)
+
+3. **Enhancement Creation**  
+   - 🆕 Generates **`Enhancement`** work items for rows marked **`Enhancement`**  
+   - 🔗 Links enhancements to original User Stories  
+   - 📋 Copies all relevant table data (Description, Impact, PO Remarks)
+
+4. **Auto-Closure**  
+   - ✅ Closes Analysis Task when **all rows** are processed  
+   - ⏱️ Sets `Completed` effort equal to `Original Estimate`
+   - 🔄 Defaults to 1 hour if no estimate is provided
+     
+### 🟢 Task Creation
 
 https://github.com/user-attachments/assets/2926e4e0-46bf-4adf-b9be-200346209bf8
 
 **One of the created Tasks:**
 ![image](https://github.com/user-attachments/assets/d9aff935-2f72-4170-99d4-80f7985fad2e)
-
-### Task Analysis
-
 
 ## 🔜 To Do
 
