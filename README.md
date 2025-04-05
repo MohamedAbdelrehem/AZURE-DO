@@ -149,8 +149,11 @@ You can dynamically add any custom task titles.
 "TaskTypesTitle": "FE-CreatUI,FE-Review,FE-APIIntegration",
 
 # Backend Team
-"TaskTypesTitle":"[BE][Supplier][Design],[BE] [Supplier][Implementation]",
+"TaskTypesTitle": "[BE][Supplier][Design],[BE] [Supplier][Implementation]",
 ```
+
+### ✔️ Auto-Close Tasks
+Set ActivateAutoClose: "true" in your workflow to close tasks when effort matches estimates.
 
 ### 📌 How to Get Team Member IDs for Mentions
 
@@ -161,12 +164,18 @@ To mention team members in automated comments, you need their **Azure DevOps Use
 3. Click on the user profile and copy their **ID from the URL**.
 4. Add multiple IDs separated by a comma `,`.
 
-### How to use analysis Table
+## ✅ How to use analysis Table
 
-> still not documented now
+> The Excel table is automatically attached when creating any Analysis Task using the Azure-Do Task Creation
+ 
+> The table can be customized as needed with any number of additional columns, and Azure-Do handles most human accidental mistakes (such as spaces, tabs, and capitalization errors)
 
-### Auto-Close Tasks
-Set ActivateAutoClose: "true" in your workflow to close tasks when effort matches estimates.
+> Please don't change the main headers in the template. 
+
+https://github.com/user-attachments/assets/4be06bca-e083-47e7-a561-593253b63582
+
+> NOTE: If you are going to use the Enhancement creation feature, make sure it's added as a work item in Azure.
+![Add Enhancement to Azure](https://github.com/user-attachments/assets/bdfda668-6712-42f8-9894-4eaa321651f7)
 
 ## ❓ FAQ
 > Q: Do I need access to AzureAnalysisAutomate/AzureTaskAutomate? <br> A: No! AZURE-DO triggers these workflows automatically, just configure your secrets.
