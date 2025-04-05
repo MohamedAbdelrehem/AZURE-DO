@@ -16,7 +16,35 @@ jobs:
 # Testing Team
 # "TaskTypesTitle": "Test Analysis,Test Case Preparation,Test Execution,Retesting"
 # for Task
-      - name: Create Task Creation Automation Inputs JSON
+      # - name: Create Task Creation Automation Inputs JSON
+      #   run: |
+      #     echo '{
+      #       "ref": "master",
+      #       "inputs": {
+      #           "AzureToken": "${{ secrets.AZURE_PAT }}",
+      #           "Organization": "Azure-Do",
+      #           "ProjectName": "Azure-DoDemo",
+      #           "ActivateAutoClose": false,
+      #           "TaskTypesTitle": "Test Case Preparation,Test Execution,Retesting",
+      #           "TaskScope": "All Sprints", 
+      #           "TaskUSScope": "All",
+      #           "TaskTags": "TestTag"
+      #       }
+      #     }' > TaskCreationAutomation.json
+          
+      # - name: Task Creation Automation
+      #   run: |
+      #     curl --location 'https://api.github.com/repos/MohamedAbdelrehem/AzureTaskAutomate/actions/workflows/Actions_Schedule_check_updates.yml/dispatches' \
+      #     --header 'Accept: application/vnd.github+json' \
+      #     --header 'Authorization: Bearer ${{ secrets.privateRepoAuth }}' \
+      #     --header 'X-GitHub-Api-Version: 2022-11-28' \
+      #     --header 'Content-Type: application/json' \
+      #     --data @TaskCreationAutomation.json
+
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+ # for Analysis
+      - name: Create Analysis Automation Inputs JSON
         run: |
           echo '{
             "ref": "master",
@@ -24,47 +52,19 @@ jobs:
                 "AzureToken": "${{ secrets.AZURE_PAT }}",
                 "Organization": "Azure-Do",
                 "ProjectName": "Azure-DoDemo",
-                "ActivateAutoClose": false,
-                "TaskTypesTitle": "Test Case Preparation,Test Execution,Retesting",
-                "TaskScope": "All Sprints", 
-                "TaskUSScope": "All",
-                "TaskTags": "TestTag"
+                "POName": "Mohamed",
+                "FrontEndIDs": "52c6c14f-82b6-6622-b809-f56e6a1f43e4",
+                "BackEndIDs": "52c6c14f-82b6-6622-b809-f56e6a1f43e4",
+                "MobileIDs": "52c6c14f-82b6-6622-b809-f56e6a1f43e4",
+                "StateReflectKeyword": "Active"
             }
-          }' > TaskCreationAutomation.json
-          
-      - name: Task Creation Automation
+          }' > AnalysisAutomation.json
+
+      - name: Analysis Automation
         run: |
-          curl --location 'https://api.github.com/repos/MohamedAbdelrehem/AzureTaskAutomate/actions/workflows/Actions_Schedule_check_updates.yml/dispatches' \
+          curl --location 'https://api.github.com/repos/MohamedAbdelrehem/AzureAnalysisAutomate/actions/workflows/Actions_Schedule_check_updates.yml/dispatches' \
           --header 'Accept: application/vnd.github+json' \
           --header 'Authorization: Bearer ${{ secrets.privateRepoAuth }}' \
           --header 'X-GitHub-Api-Version: 2022-11-28' \
           --header 'Content-Type: application/json' \
-          --data @TaskCreationAutomation.json
-
-# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 
- # for Analysis
-      # - name: Create Analysis Automation Inputs JSON
-      #   run: |
-      #     echo '{
-      #       "ref": "master",
-      #       "inputs": {
-      #           "AzureToken": "${{ secrets.AZURE_PAT }}",
-      #           "Organization": "",
-      #           "ProjectName": "",
-      #           "POName": "Ahmed Hisham",
-      #           "FrontEndIDs": "b74e0bb1-49f3-65af-9283-849b2e350002",
-      #           "BackEndIDs": "51625031-41e2-6ab0-9da1-c5ce45615271",
-      #           "MobileIDs": "1436548a-4c9a-6ba8-ad22-8aa503fd959b",
-      #           "StateReflectKeyword": "Ready For Review"
-      #       }
-      #     }' > AnalysisAutomation.json
-
-      # - name: Analysis Automation
-      #   run: |
-      #     curl --location 'https://api.github.com/repos/MohamedAbdelrehem/AzureAnalysisAutomate/actions/workflows/Actions_Schedule_check_updates.yml/dispatches' \
-      #     --header 'Accept: application/vnd.github+json' \
-      #     --header 'Authorization: Bearer ${{ secrets.privateRepoAuth }}' \
-      #     --header 'X-GitHub-Api-Version: 2022-11-28' \
-      #     --header 'Content-Type: application/json' \
-      #     --data @AnalysisAutomation.json
+          --data @AnalysisAutomation.json
