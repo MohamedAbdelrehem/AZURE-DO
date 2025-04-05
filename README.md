@@ -82,7 +82,7 @@ and add the following secrets:
 | Secret Name       | Description                                               | Where to Get It                                                                                          |
 | ----------------- | --------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 | `AZURE_PAT`       | Personal Access Token for Azure DevOps                    | 1. Go to your Azure DevOps Project. <br> 2. Click on your profile ➝ **Personal Access Tokens**. <br> 3. Generate a token with Work Item Read & Write permissions. |
-| `privateRepoAuth` | GitHub token to trigger workflows | Use the following read-only token, which will be added publicly in the repository settings: `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`. |
+| `privateRepoAuth` | GitHub token to trigger workflows | Use the following read-only token, which will be added publicly in the repository settings: `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`. |
 
 https://github.com/user-attachments/assets/3e8c74a2-88ce-41ab-ae3a-9799b9a863b1
 
