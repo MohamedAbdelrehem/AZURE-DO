@@ -26,7 +26,7 @@ jobs:
                 "ProjectName": "Azure-DoDemo",
                 "ActivateAutoClose": false,
                 "TaskTypesTitle": "Test Case Preparation,Test Execution,Retesting",
-                "TaskScope": "All", 
+                "TaskScope": "All Sprints", 
                 "TaskUSScope": "All",
                 "TaskTags": "TestTag"
             }
