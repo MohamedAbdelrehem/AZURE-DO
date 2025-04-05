@@ -3,43 +3,44 @@
  <img  src="AZURE-DO.png" align="center" alt="AZUREDOLogo" />
 </p>
 <!-- <h1 align="center"> From To-Do to Done </h1> -->
-<p align="center">
-<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/MohamedAbdelrehem/AZURE-DO">
-<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/y/MohamedAbdelrehem/AZURE-DO">
-<img alt="GitHub closed pull requests" src="https://img.shields.io/github/issues-pr-closed/MohamedAbdelrehem/AZURE-DO">
-<img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/MohamedAbdelrehem/AZURE-DO">
-<img alt="GitHub" src="https://img.shields.io/github/license/MohamedAbdelrehem/AZURE-DO?color=brightgreen">
-<br>
-<img src="https://img.shields.io/badge/--F05032?logo=git&logoColor=ffffff" />
-<img src="https://img.shields.io/badge/--6C33AF?logo=visual%20studio" />
-<img  src="https://img.shields.io/badge/--512BD4?logo=.net&logoColor=ffffff" />
-<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/MohamedAbdelrehem/AZURE-DO">
-<img src="https://badgen.net/badge/icon/windows?icon=windows&label" />
-<img alt="GitHub release (latest by date including pre-releases)" src="https://img.shields.io/github/v/release/MohamedAbdelrehem/AZURE-DO?include_prereleases">
- 
-</p>
+<!-- Badges -->
 
 <p align="center">
-<a href="#-about-clinicxpromax">📖 About ClinicXProMax</a> &nbsp;&bull;&nbsp;
-<a href="#-features">🚀 Features</a> &nbsp;&bull;&nbsp;
-<a href="#-tech-stack">💻 Tech stack</a> &nbsp;&bull;&nbsp;
-<a href="#%EF%B8%8F-installation">🛠️ Installation</a>
+   <a href="https://github.com/your-repo/AZURE-DO/stargazers">
+      <img src="https://img.shields.io/github/stars/MohamedAbdelrehem/AZURE-DO?logo=github&color=yellow&logoColor=black" alt="Stars">
+    </a>
+    <a href="https://github.com/your-repo/AZURE-DO/issues">
+      <img src="https://img.shields.io/github/issues/MohamedAbdelrehem/AZURE-DO?color=green&logo=git&logoColor=white" alt="Issues">
+    </a>
+ <br><br>
+    <img src="https://img.shields.io/badge/Azure-DevOps-0078D7?logo=azure-devops&logoColor=white" alt="Azure DevOps">
+<img src="https://img.shields.io/badge/Java-ED8B00?logo=openjdk&logoColor=white" >
+<img src="https://img.shields.io/badge/REST_Assured-009688?logo=rest&logoColor=white" >
+    <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?logo=github-actions&logoColor=white" alt="GitHub Actions">
+<img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" >
+    <img src="https://img.shields.io/badge/YAML-000000?logo=yaml&logoColor=white" alt="YAML">
+    <img src="https://img.shields.io/badge/Excel-217346?logo=microsoft-excel&logoColor=white" alt="Excel">
+<img src="https://img.shields.io/badge/Postman-FF6C37?logo=postman&logoColor=white" >
+</p>
+
+<!-- Index -->
+<p align="center">
+<a href="#-what-is-azure-do">📖 What is AZURE-DO?</a> &nbsp;&bull;&nbsp;
+<a href="#-key-features">🚀 Key Features</a> &nbsp;&bull;&nbsp;
+<a href="#-quick-start">⚡ Quick Start </a> &nbsp;&bull;&nbsp;
+<a href="#️-advanced-configuration">🛠️ Advanced Configuration</a>
 <br>
+<a href="#-azure-do-in-action">💪 Azure-Do in Action (Demo)</a> &nbsp;&bull;&nbsp;
 <a href="#-to-do">🔜 To Do</a> &nbsp;&bull;&nbsp;
-<a href="#-how-to-contribute">🤝 How to contribute</a> &nbsp;&bull;&nbsp;
-<a href="#%EF%B8%8F-license">⚠️ License</a> &nbsp;&bull;&nbsp;
-<a href="#-spread-the-word">🌟 Spread the word!</a> &nbsp;&bull;&nbsp;
-<a href="#special-thanks-for-minia-university-especially-drabdullah-hassan-and-engal-shaimaa-a-younis-for-there-support-for-this-project">💛Special thanks</a>
+<a href="#-faq">❓ FAQ</a> &nbsp;&bull;&nbsp;
+<a href="#-spread-the-word">🌟 Spread the Word!</a>
 </p>
-
-
-
 
 ---
 
 ## 📖 What is AZURE-DO?
 
-**AZURE-DO** is your Azure DevOps automation assistant. It triggers workflows in **AzureAnalysisAutomate** and **AzureTaskAutomate** to automate work item management, task creation, and sprint analysis — **no coding required**.
+**AZURE-DO** is your Azure DevOps automation assistant. It triggers workflows in **AzureAnalysisAutomate** and **AzureTaskAutomate** to automate work item management, task creation, and sprint analysis **no coding required**.
 
 ---
 
@@ -67,7 +68,7 @@
 ## ⚡ Quick Start
 
 ### 1️⃣ **Fork the Repository**  
-Click [**Fork**](https://github.com/your-repo/fork) to create your copy of AZURE-DO.  
+Click **Fork** to create your copy of AZURE-DO.  
 
 ---
 
@@ -81,7 +82,7 @@ and add the following secrets:
 | Secret Name       | Description                                               | Where to Get It                                                                                          |
 | ----------------- | --------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 | `AZURE_PAT`       | Personal Access Token for Azure DevOps                    | 1. Go to your Azure DevOps Project. <br> 2. Click on your profile ➝ **Personal Access Tokens**. <br> 3. Generate a token with Work Item Read & Write permissions. |
-| `privateRepoAuth` | GitHub token to trigger workflows | Use the following read-only token, which will be added publicly in the repository settings: `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`. |
+| `privateRepoAuth` | GitHub token to trigger workflows | Use the following read-only token, which will be added publicly in the repository settings: `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`. |
 
 https://github.com/user-attachments/assets/3e8c74a2-88ce-41ab-ae3a-9799b9a863b1
 
@@ -98,6 +99,7 @@ Navigate to **.github/workflows** ➝ **Azure-Do_Trigger.yml** <br>
 | `Organization` | Both  | Name of your Azure DevOps organization.                      | `"OrgnizationName"` |
 | `ProjectName`  | Both  | Name of your Azure DevOps project (use `%20` for spaces).    | `"Project%20Name"`  |
 
+![Organization and ProjectName](https://github.com/user-attachments/assets/fb7971e1-1828-4678-8809-0afd07c8c62d)
 
 ---
 
@@ -108,7 +110,7 @@ Navigate to **.github/workflows** ➝ **Azure-Do_Trigger.yml** <br>
 | `ActivateAutoClose`  | Task Automate | Automatically closes tasks when effort matches estimates (`true`/`false`). | `true`                            |
 | `TaskTypesTitle`     | Task Automate | Comma-separated task titles to create (e.g., team-specific templates).      | `"Test Analysis,Test Execution"`  |
 | `TaskScope`          | Task Automate | Sprint scope: `Current Sprint` or `All Sprints`.                            | `"Current Sprint"`                |
-| `TaskUSScope`        | Task Automate | Filters User Stories by platform: `Web`, `Mobile`, or `All`.                | `"Web"`                           |
+| `TaskUSScope`        | Task Automate | Filters user stories by platform based on the title: `Web`, `Mobile`, or `All`.                | `"Web"`                           |
 | `TaskTags`           | Task Automate | Tags to add to created tasks (comma-separated). Use `""` to skip.           | `"tag1,tag2"`                     |
 
 ---
@@ -124,7 +126,7 @@ Navigate to **.github/workflows** ➝ **Azure-Do_Trigger.yml** <br>
 | `StateReflectKeyword` | Analysis Automate | Work item state to trigger analysis (e.g., `Ready For Review`).     | `"Ready For Review"`        |
 
 
-### 3️⃣ **Trigger the Workflow**  
+### 4️⃣ **Trigger the Workflow**  
 1. Make sure the `Azure-Do_Trigger.yml` file has no empty variables and that commas are placed correctly between the variables.
 > It's recommended to comment out one of the two flows when running the other to avoid conflicts.
 2. Go to **Actions ➝ Trigger Workflow Dispatch**.  
@@ -170,6 +172,15 @@ Set ActivateAutoClose: "true" in your workflow to close tasks when effort matche
 > Q: Do I need access to AzureAnalysisAutomate/AzureTaskAutomate? <br> A: No! AZURE-DO triggers these workflows automatically, just configure your secrets.
 
 
+##  💪 Azure-Do in Action  
+### Task Creation
+
+https://github.com/user-attachments/assets/2926e4e0-46bf-4adf-b9be-200346209bf8
+
+**One of the created Tasks:**
+![image](https://github.com/user-attachments/assets/d9aff935-2f72-4170-99d4-80f7985fad2e)
+
+### Task Analysis
 
 
 ## 🔜 To Do
